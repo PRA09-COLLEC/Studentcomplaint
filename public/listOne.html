@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Student | Scholaro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🎓 Scholaro</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="insert.html">Insert</a>
+        <a href="update.html">Update</a>
+        <a href="list.html">List</a>
+        <a href="listone.html">List One</a>
+        <a href="delete.html">Delete</a>
+    </nav>
+</header>
+
+<main class="container">
+
+    <h1>🔍 Find One Student</h1>
+
+    <section class="panel">
+        <h2>Available Roll Numbers</h2>
+
+        <div id="rollNumbers" class="roll-container">
+            Loading roll numbers...
+        </div>
+    </section>
+
+    <section class="panel">
+        <h2>Search Student</h2>
+
+        <form id="findForm">
+            <label for="sno">Enter Roll Number</label>
+            <input type="number" id="sno" required>
+
+            <button type="submit" class="btn">Find Student</button>
+        </form>
+
+        <div id="formNotice" class="notice" hidden></div>
+
+        <div id="singleStudent"></div>
+    </section>
+
+</main>
+
+<footer>Scholaro Student Management System</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

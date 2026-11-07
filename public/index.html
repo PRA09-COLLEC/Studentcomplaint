@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholaro | Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">🎓 Scholaro</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="insert.html">Insert</a>
+        <a href="update.html">Update</a>
+        <a href="list.html">List</a>
+        <a href="listone.html">List One</a>
+        <a href="delete.html">Delete</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Welcome to Scholaro</h1>
+        <p>Your smart student management dashboard.</p>
+        <a href="insert.html" class="btn">Add New Student</a>
+    </div>
+
+    <img
+        src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=80"
+        alt="Students learning in a classroom">
+</section>
+
+<main class="container">
+
+    <h2>Student Statistics</h2>
+
+    <div class="stats">
+        <div class="card">
+            <h3>Total Students</h3>
+            <p id="totalCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Classes</h3>
+            <p id="classCount">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Average Total</h3>
+            <p id="averageTotal">0</p>
+        </div>
+    </div>
+
+    <section class="panel">
+        <h2>🎓 Student Roll Number Dashboard</h2>
+        <p>Click a roll number to view that student's details.</p>
+
+        <div id="rollNumbers" class="roll-container">
+            Loading roll numbers...
+        </div>
+    </section>
+
+    <h2>Manage Students</h2>
+
+    <div class="quick-links">
+        <a href="insert.html" class="quick-card">
+            <span>➕</span>
+            <h3>Insert Student</h3>
+            <p>Add a new student record.</p>
+        </a>
+
+        <a href="update.html" class="quick-card">
+            <span>✏️</span>
+            <h3>Update Student</h3>
+            <p>Edit student information.</p>
+        </a>
+
+        <a href="list.html" class="quick-card">
+            <span>📋</span>
+            <h3>List Students</h3>
+            <p>View all student records.</p>
+        </a>
+
+        <a href="listone.html" class="quick-card">
+            <span>🔍</span>
+            <h3>Find Student</h3>
+            <p>Search using a roll number.</p>
+        </a>
+
+        <a href="delete.html" class="quick-card">
+            <span>🗑️</span>
+            <h3>Delete Student</h3>
+            <p>Remove a student record.</p>
+        </a>
+    </div>
+
+</main>
+
+<footer>© 2026 Scholaro Student Management System</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
